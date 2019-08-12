@@ -1,0 +1,62 @@
+swift
+
+iBooks
+Intro to Development Apps with Swift
+Development Apps with Swift
+
+germans@unam.com
+
+Programación orientada a protocolos
+
+LLVM. -> Low level virtual machine
+
+Bitcode -> ABI (Application Binary Interface)
+
+CISC -> complex instruction set computer
+
+RISC -> reduced
+
+ARM -> Advanced RISC machine
+
+Bionic ->
+
+cmd + space -> spotlight
+
+* Tipos de dato:
+- Int
+- String
+- Double
+- float
+- bool
+
+* nulo -> nil, auscencia de valor
+
+* Operadores
+
+Libro: Deitel
+
+ARC Automatic Reference Counting
+
+----------------- 10/08/19 -------------------------
+Componentes Xcode:
+
+AppDelegate -> todo lo que se manda a llamar cuando se lanza la aplicacion
+ViewController -> controlador d ela aplicacion
+mainStoryBoard -> vista de la aplicacion, se lanza despues de launch
+Assets -> carpeta donde vienen todos los recursos como graficos, imagenes, etc
+Launch -> lo que primero se lanza para la aplicacion
+info.plist -> permisos y accesos que se pide al usuario
+Products -> por si se quiere importar bibliotecas de alguien mas
+
+
+1.0.1 cambios que no afectan a la aplicacion
+1.1.0 -> cambios en el desempeño pero no en la funcionalidad
+2.1.0 -> cambios significativos
+
+first responder -> para ver que componente va a responder primero
+exit -> para salir de la vista actual y regresar a la anterior
+
+Cmd + d -> copiar componente
+
+- clase se usa si se necesita que algun dato exista en toda la aplicacion
+- struct se usa para guarda datos
