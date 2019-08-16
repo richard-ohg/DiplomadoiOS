@@ -59,4 +59,7 @@ exit -> para salir de la vista actual y regresar a la anterior
 Cmd + d -> copiar componente
 
 - clase se usa si se necesita que algun dato exista en toda la aplicacion
-- struct se usa para guarda datos
+- struct se usa para guardar datos
+
+
+------------------- 16/08 -------------------

@@ -28,11 +28,11 @@ class ViewController: UIViewController {
 //            saludo.textColor = UIColor.black
 //        }
         
-//        if sender.tag == 0{
-//            saludo.textColor = UIColor.red
-//        }else{
-//            saludo.textColor = UIColor.blue
-//        }
+        if sender.tag == 0{
+            saludo.textColor = UIColor.red
+        }else{
+            saludo.textColor = UIColor.blue
+        }
         
 //        toogle = !toogle
         
