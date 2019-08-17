@@ -63,3 +63,5 @@ Cmd + d -> copiar componente
 
 
 ------------------- 16/08 -------------------
+Tap bar -> vistas independientes
+Navigation Bar -> vistas que una depende de la anterior
