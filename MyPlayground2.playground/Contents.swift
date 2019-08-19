@@ -68,3 +68,48 @@ for alumno in alumnos {
     alumno.leer()
 }
 
+//----------------------------------- 17/08
+
+protocol Saltar{
+    func salta()
+}
+
+protocol Sanar{
+    func sana()
+}
+
+class Jugador: Saltar{
+    func salta() {
+        print("jugador salta")
+    }
+}
+
+class Guerrero: Jugador{
+    
+}
+
+class Mago: Jugador, Sanar{
+    func sana() {
+        print("Mago sanador")
+    }
+    
+    override func salta() {
+        print("Los magos no saltan")
+    }
+}
+
+var oz = Mago()
+var aquiles = Guerrero()
+
+func hazloSaltar(saltador: Saltar){
+    saltador.salta()
+}
+
+func hazloSanar(sanador: Sanar){
+    sanador.sana()
+}
+
+
+hazloSaltar(saltador: oz)
+hazloSaltar(saltador: aquiles)
+hazloSanar(sanador: oz)

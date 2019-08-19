@@ -65,3 +65,28 @@ Cmd + d -> copiar componente
 ------------------- 16/08 -------------------
 Tap bar -> vistas independientes
 Navigation Bar -> vistas que una depende de la anterior
+
+
+cracking the code
+historias de un desarrollador
+ios Development E-book
+- Sundell -> tipo de que tiene un blog
+- Apple Coding
+- 9to5 -> predicciones de apple
+- objc.io -> sitio y libros muy buenos
+
+
+----------------
+Dos tipos de tablas:
+- UITableViewController
+- embebido dentro de mi view controller
+
+Delegate (delegado) -> es un patrón de diseño
+
+Protocolos:
+UITableViewDataSource -> contiene los datos de la tabla, implementado en Swift, por lo tanto es forzoso aplicar los métodos
+UITableViewDelegate -> El comportamiento de la tabla, implementado en objective-C, por lo tanto es opcional implementar métodos
+indexPath -> objeto que te sirve para saber en que renglon te encuentras (posicion en que te encuentras)
+
+XIB -> external interface builder
+https://goalkicker.com
