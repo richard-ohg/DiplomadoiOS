@@ -90,3 +90,19 @@ indexPath -> objeto que te sirve para saber en que renglon te encuentras (posici
 
 XIB -> external interface builder
 https://goalkicker.com
+
+--------------- 23/08
+
+closures -> funciones anónimas
+
+UITableViewController -> ya contiene los protocolos DataSource y Delegate
+UITableView -> es embebido por lo tanto tienes que utilizar
+
+UIAlertController -> - actionSheet -> sale de abajo y muestra las opciones
+                     - alert -> es una alerta normal en medio de la vista
+
+present -> funcion para mostrar vistas
+
+ContextualAction -> para deslizar en un table y hacer una acción 
+  - head -> de derecha a izquierda
+  - tail -> de izquierda a derecha
