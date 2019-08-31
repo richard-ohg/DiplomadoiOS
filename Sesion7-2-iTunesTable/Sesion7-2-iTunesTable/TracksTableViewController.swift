@@ -53,7 +53,10 @@ class TracksTableViewController: UITableViewController, UISearchBarDelegate {
     }
  
     func getTracks(cadena: String){
-        let url = URL(string: "https://itunes.apple.com/search?term=\(cadena)")
+        
+        let artista = cadena.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+        
+        let url = URL(string: "https://itunes.apple.com/search?term=\(artista!)")
         
         let task = URLSession.shared.dataTask(with: url!){
             (data, response, error) in
@@ -66,7 +69,7 @@ class TracksTableViewController: UITableViewController, UISearchBarDelegate {
                     print(track.trackName)
                     self.tracks.append(track)
                 }
-            
+//                Lo sacamos del hilo principal para que lo haga más rápido
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }

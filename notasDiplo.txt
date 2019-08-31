@@ -119,3 +119,10 @@ REST
     - DELETE
 
 https://jsonformatter.org/json-pretty-print
+
+-------------------------- 31/08
+
+
+usingSpringWithDamping -> animacion que hace de amortiguacion
+
+Clase.self -> como esta estructurada nuestra clase
