@@ -109,4 +109,13 @@ ContextualAction -> para deslizar en un table y hacer una acción
 
 Contructor falible -> si cumples con los requerimientos te regreso el objeto, sino regresa un nil
 
-- se tienen que levantar pedidos aunque no tenga red y que se manden al servidor cuando tengan red   
+- se tienen que levantar pedidos aunque no tenga red y que se manden al servidor cuando tengan red
+
+---------------------- 30/08
+REST
+    - POST
+    - GET
+    - UPDATE
+    - DELETE
+
+https://jsonformatter.org/json-pretty-print
