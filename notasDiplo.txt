@@ -126,3 +126,9 @@ https://jsonformatter.org/json-pretty-print
 usingSpringWithDamping -> animacion que hace de amortiguacion
 
 Clase.self -> como esta estructurada nuestra clase
+
+DidSet -> se va a echar a andar cuando el valor ha sido asignado
+WillSet -> se va a echar a andar cuando apenas se va a asignar
+
+SDImage -> servicio de cache
+AlamoFire -> para manejo de headers
