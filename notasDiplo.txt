@@ -122,7 +122,6 @@ https://jsonformatter.org/json-pretty-print
 
 -------------------------- 31/08
 
-
 usingSpringWithDamping -> animacion que hace de amortiguacion
 
 Clase.self -> como esta estructurada nuestra clase
@@ -132,3 +131,16 @@ WillSet -> se va a echar a andar cuando apenas se va a asignar
 
 SDImage -> servicio de cache
 AlamoFire -> para manejo de headers
+
+----------------------- 6/09
+
+GoogleService-Info.plist -> archivo que debemos mantener oculto para evitar robo
+cocoaPods -> instalacion de bibliotecas de terceros
+
+- pod init
+- en el archivo PodFile agregar
+      pod 'Firebase/Core'
+      pod 'Firebase/Auth'
+- pod install
+
+Nota: Siempre tenemos que abrir el .xcworkspace porque ya tiene las ligas para las bibliotecas que tiene pods

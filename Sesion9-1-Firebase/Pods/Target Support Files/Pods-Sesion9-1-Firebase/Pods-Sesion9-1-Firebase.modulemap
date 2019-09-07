@@ -1,0 +1,6 @@
+framework module Pods_Sesion9_1_Firebase {
+  umbrella header "Pods-Sesion9-1-Firebase-umbrella.h"
+
+  export *
+  module * { export * }
+}
