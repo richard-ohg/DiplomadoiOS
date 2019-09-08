@@ -17,10 +17,25 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.hideKeyboardWhenTappedAround()
+        
+        //Looks for single or multiple taps.
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+//        tap.cancelsTouchesInView = false
+        
+//        view.addGestureRecognizer(tap)
+        
         // Do any additional setup after loading the view.
         isLoged()
 
     }
+    
+//    @objc func dismissKeyboard() {
+//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+//        view.endEditing(true)
+//    }
     
     @IBAction func aceptar(_ sender: UIButton) {
         guard let userEmail = email.text, userEmail != "", let userPass = password.text, userPass != "" else {

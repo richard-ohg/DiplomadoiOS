@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5AC193374F292F0EFC3AB805 /* Pods_Sesion9_1_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6655B24248A4D36F91C289 /* Pods_Sesion9_1_Firebase.framework */; };
+		77FF911D2323F9E80023267E /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF911C2323F9E80023267E /* Producto.swift */; };
+		77FF911F2324093D0023267E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF911E2324093D0023267E /* EditViewController.swift */; };
 		791F6F4423230ABD00CAE04F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F6F4323230ABD00CAE04F /* AppDelegate.swift */; };
 		791F6F4623230ABD00CAE04F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F6F4523230ABD00CAE04F /* ViewController.swift */; };
 		791F6F4923230ABD00CAE04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791F6F4723230ABD00CAE04F /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		3C6655B24248A4D36F91C289 /* Pods_Sesion9_1_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sesion9_1_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6847D081BE14363A3E66656A /* Pods-Sesion9-1-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sesion9-1-Firebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sesion9-1-Firebase/Pods-Sesion9-1-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
+		77FF911C2323F9E80023267E /* Producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
+		77FF911E2324093D0023267E /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		791F6F4023230ABD00CAE04F /* Sesion9-1-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sesion9-1-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		791F6F4323230ABD00CAE04F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		791F6F4523230ABD00CAE04F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				791F6F5723232B6900CAE04F /* LoginViewController.swift */,
 				791F6F59232333E300CAE04F /* ListTableViewController.swift */,
 				791F6F5D23233B1200CAE04F /* AddViewController.swift */,
+				77FF911C2323F9E80023267E /* Producto.swift */,
+				77FF911E2324093D0023267E /* EditViewController.swift */,
 			);
 			path = "Sesion9-1-Firebase";
 			sourceTree = "<group>";
@@ -198,34 +204,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Sesion9-1-Firebase/Pods-Sesion9-1-Firebase-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Sesion9-1-Firebase/Pods-Sesion9-1-Firebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Sesion9-1-Firebase/Pods-Sesion9-1-Firebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sesion9-1-Firebase/Pods-Sesion9-1-Firebase-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sesion9-1-Firebase/Pods-Sesion9-1-Firebase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -238,8 +225,10 @@
 				791F6F5E23233B1200CAE04F /* AddViewController.swift in Sources */,
 				791F6F5823232B6900CAE04F /* LoginViewController.swift in Sources */,
 				791F6F4623230ABD00CAE04F /* ViewController.swift in Sources */,
+				77FF911D2323F9E80023267E /* Producto.swift in Sources */,
 				791F6F4423230ABD00CAE04F /* AppDelegate.swift in Sources */,
 				791F6F5A232333E300CAE04F /* ListTableViewController.swift in Sources */,
+				77FF911F2324093D0023267E /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2BL68NTA5;
 				INFOPLIST_FILE = "Sesion9-1-Firebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2BL68NTA5;
 				INFOPLIST_FILE = "Sesion9-1-Firebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
