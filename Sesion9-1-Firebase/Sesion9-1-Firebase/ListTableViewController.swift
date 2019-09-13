@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseFirestore
 import FirebaseStorage
+import FirebaseUI
 
 class ListTableViewController: UITableViewController {
 
@@ -51,24 +52,38 @@ class ListTableViewController: UITableViewController {
         cell.textLabel?.text = productos[indexPath.row].nombre
         
         let userImageRef = storageReference.child("/photos").child(productos[indexPath.row].id)
+//        var urlc: URL!
+        let placeHolder = UIImage(named: "jordan")
+        
+//        userImageRef.downloadURL { (url, error) in
+//            if let error = error{
+//                print(error.localizedDescription)
+//                cell.imageView?.image = UIImage(named: "jordan")
+//                return
+//            }else{
+////                print(String(describing: url!))
+//                urlc = url
+//            }
+//
+//            URLSession.shared.dataTask(with: urlc){
+//                (data, _, _) in
+//                guard let data = data else {return}
+//                DispatchQueue.main.async {
+//                    cell.imageView?.image = UIImage(data: data)
+//                    //                        self.tableView.reloadData()
+//                }
+//            }.resume()
+//        }
         
         userImageRef.downloadURL { (url, error) in
             if let error = error{
                 print(error.localizedDescription)
-                cell.imageView?.image = UIImage(named: "jordan")
             }else{
-//                print(String(describing: url!))
-                URLSession.shared.dataTask(with: url!){
-                    (data, _, _) in
-                    guard let data = data else {return}
-                    DispatchQueue.main.async {
-                        cell.imageView?.image = UIImage(data: data)
-//                        self.tableView.reloadData()
-                    }
-                }.resume()
+                print("imagen descargada")
             }
         }
         
+        cell.imageView?.sd_setImage(with: userImageRef, placeholderImage: placeHolder )
         
         return cell
     }

@@ -202,6 +202,7 @@
                         <viewLayoutGuide key="safeArea" id="dlb-Tr-QSz"/>
                     </view>
                     <connections>
+                        <outlet property="addView" destination="mLX-7t-IN6" id="Nmx-75-fuU"/>
                         <outlet property="photo" destination="ics-hb-Gug" id="2Zu-aQ-BKM"/>
                         <outlet property="precio" destination="cbQ-7p-PgR" id="lWi-HS-xYe"/>
                         <outlet property="producto" destination="gVa-vy-KJP" id="YWZ-Kg-20A"/>

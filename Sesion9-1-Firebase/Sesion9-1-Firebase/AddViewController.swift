@@ -18,6 +18,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     @IBOutlet weak var precio: UITextField!
     @IBOutlet weak var producto: UITextField!
     @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var addView: UIView!
     
     var ref: DocumentReference!
     var getRef: Firestore!
@@ -84,8 +85,8 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     func uploadImage(imageData: Data){
         let activityIndicator = UIActivityIndicatorView.init(style: .gray)
         activityIndicator.startAnimating()
-        activityIndicator.center = self.view.center
-        view.addSubview(activityIndicator)
+        activityIndicator.center = self.addView.center
+        addView.addSubview(activityIndicator)
         
         let storageReference = Storage.storage().reference()
         let userImageRef = storageReference.child("/photos").child(ref.documentID)

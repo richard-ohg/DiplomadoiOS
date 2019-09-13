@@ -9,5 +9,6 @@ target 'Sesion9-1-Firebase' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-	pod 'Firebase/Storage'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI'
 end
