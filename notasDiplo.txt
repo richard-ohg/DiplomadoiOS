@@ -141,6 +141,13 @@ cocoaPods -> instalacion de bibliotecas de terceros
 - en el archivo PodFile agregar
       pod 'Firebase/Core'
       pod 'Firebase/Auth'
+      pod 'Firebase/Firestore'
+	    pod 'Firebase/Storage'
 - pod install
 
 Nota: Siempre tenemos que abrir el .xcworkspace porque ya tiene las ligas para las bibliotecas que tiene pods
+
+----------------------- 13/09
+
+https://github.com/firebase/FirebaseUI-iOS -> documentacion FirebaseUI
+señor pago -> para pasarela de pago para pruebas
