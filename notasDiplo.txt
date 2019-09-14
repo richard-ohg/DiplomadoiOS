@@ -142,7 +142,8 @@ cocoaPods -> instalacion de bibliotecas de terceros
       pod 'Firebase/Core'
       pod 'Firebase/Auth'
       pod 'Firebase/Firestore'
-	    pod 'Firebase/Storage'
+      pod 'Firebase/Storage'
+	    pod 'Firebase/FirebaseUI'
 - pod install
 
 Nota: Siempre tenemos que abrir el .xcworkspace porque ya tiene las ligas para las bibliotecas que tiene pods
@@ -150,4 +151,23 @@ Nota: Siempre tenemos que abrir el .xcworkspace porque ya tiene las ligas para l
 ----------------------- 13/09
 
 https://github.com/firebase/FirebaseUI-iOS -> documentacion FirebaseUI
+
 señor pago -> para pasarela de pago para pruebas
+openpay
+
+genericos -> para que se pueda recibir de cualquier tipo de dato
+
+Cuando ponemos el self se manda la referencia, no la instancia
+
+Equatable -> protocolo para sobrecargar el operador ==
+
+- sobrecarga parametrica
+- sobrecarga natural
+
+* lottie -> para animaciones
+Podfile:
+- pod 'lottie-ios'
+
+https://github.com/airbnb/lottie-ios -> documentacion
+http://airbnb.io/lottie/#/ios -> documentacion x2
+https://lottiefiles.com/featured -> animaciones

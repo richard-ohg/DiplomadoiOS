@@ -1,0 +1,6 @@
+framework module Pods_Sesion11_3_AnimLottie {
+  umbrella header "Pods-Sesion11-3-AnimLottie-umbrella.h"
+
+  export *
+  module * { export * }
+}
