@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BoxView" customModule="Sesion12_1_testXIB" customModuleProvider="target">
+            <connections>
+                <outlet property="CajaTexto" destination="wep-0k-TNG" id="WgO-7Z-CWB"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="Gbd-WP-2Hk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="595" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wep-0k-TNG">
+                    <rect key="frame" x="64" y="79" width="467" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.96152064140000004" green="1" blue="0.55437067330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="wep-0k-TNG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YaF-yN-uyw"/>
+                <constraint firstItem="wep-0k-TNG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bXs-uu-kde"/>
+                <constraint firstItem="wep-0k-TNG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="j8I-4e-OVB"/>
+                <constraint firstItem="wep-0k-TNG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="64" id="yJF-VY-IEy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="236.95652173913047" y="-146.65178571428569"/>
+        </view>
+    </objects>
+</document>

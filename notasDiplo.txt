@@ -171,3 +171,21 @@ Podfile:
 https://github.com/airbnb/lottie-ios -> documentacion
 http://airbnb.io/lottie/#/ios -> documentacion x2
 https://lottiefiles.com/featured -> animaciones
+
+------------------ 14/09
+
+* XIB
+
+- se debe crear una view
+- la clase debe ir en el file's owner
+- se debe referenciar el view y el componente
+- en el view controller poner una view y ahí asignarle la misma clase
+
+- @IBDesignable -> en tiempo de diseño el contenido del componente (cuando hacemos vistas de forma programatica)
+- @IBInspectable -> para propiedades que pueden ser usados
+
+- CoreLocation -> Para obtener datos del dispositivo movil
+- MapKit -> Para mapas de apple
+
+Libros:
+- kindle -> MapKit: Quick Guide for Master Mind 
