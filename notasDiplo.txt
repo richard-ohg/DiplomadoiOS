@@ -188,4 +188,15 @@ https://lottiefiles.com/featured -> animaciones
 - MapKit -> Para mapas de apple
 
 Libros:
-- kindle -> MapKit: Quick Guide for Master Mind 
+- kindle -> MapKit: Quick Guide for Master Mind
+
+-------------------- 20/09
+- MockFlow -> para modelado
+- Para hacer interfaz programatica:
+    * primero modificar AppDelegate
+        º dismiss - present
+        º pushViewController - popViewController
+
+
+-------------------- Curso Intermedio
+- https://github.com/iOSLabUNAM/diplomado

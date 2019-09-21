@@ -11,39 +11,74 @@ import CoreLocation     // Para obtener datos del dispositivo movil
 import MapKit           // Para mapas
 
 class ViewController: UIViewController {
-
-    var locationManager: CLLocationManager!
+    
+    @IBOutlet weak var mapa: MKMapView!
+    
+    var manager = CLLocationManager()
+    var latitud: CLLocationDegrees!
+    var longitud: CLLocationDegrees!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        Creamos instancia
-        locationManager = CLLocationManager()
+//        manager = CLLocationManager()
         
 //        Para permiso de gps
-        locationManager.requestWhenInUseAuthorization()
+        manager.requestWhenInUseAuthorization()
         
 //        Para ver que tan preciso se quiere
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.desiredAccuracy = kCLLocationAccuracyBest
         
 //        Cada cuanto voy a recibir actualizaciones (cada que te mueves)
-        locationManager.distanceFilter = 1000
-//        locationManager.distanceFilter = kCLDistanceFilterNone // Para que no haya medida para que se este actualizando
+//        manager.distanceFilter = 10
+        manager.distanceFilter = kCLDistanceFilterNone // Para que no haya medida para que se este actualizando
         
 //        En Project -> Capabilities -> Background Modes -> Location Updates
 //        Para que se actualice en background
-        locationManager.allowsBackgroundLocationUpdates = true
+        manager.allowsBackgroundLocationUpdates = true
         
-        locationManager.delegate = self
-        locationManager.startUpdatingLocation()
+        manager.delegate = self
+        manager.startUpdatingLocation()
+        
         
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        print(latitud, longitud)
+//
+//        let localization = CLLocationCoordinate2DMake(self.latitud, self.longitud)
+//        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+//        let region = MKCoordinateRegion(center: localization, span: span)
+//
+//        mapa.setRegion(region, animated: true)
+//        mapa.showsUserLocation = true
+//        mapa.mapType = .hybrid
+//    }
 
+    @IBAction func getCoords(_ sender: UIButton) {
+        print(latitud, longitud)
+        
+        let localization = CLLocationCoordinate2DMake(latitud, longitud)
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let region = MKCoordinateRegion(center: localization, span: span)
+        
+        mapa.setRegion(region, animated: true)
+        mapa.showsUserLocation = true
+        mapa.mapType = .hybrid
+    }
 }
+
+
 
 extension ViewController: CLLocationManagerDelegate{
 //    Cada actualizacion se ejecuta este metodo
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations)
+//        print(locations)
+//        let newLocation = locations.last!
+        if let location = locations.first{
+            self.latitud = location.coordinate.latitude
+            self.longitud = location.coordinate.longitude
+        }
     }
 }
 
