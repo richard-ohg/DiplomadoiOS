@@ -197,6 +197,13 @@ Libros:
         º dismiss - present
         º pushViewController - popViewController
 
+- Libros:
+    * Soft Skills: The software developer's life manual
+    * Clean Code: A Handbook of Agile Software Craftsmanship (Robert C. Martin)
+    * The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin Series)
+
+- imdb -> API para cartelera
+
 
 -------------------- Curso Intermedio
 - https://github.com/iOSLabUNAM/diplomado

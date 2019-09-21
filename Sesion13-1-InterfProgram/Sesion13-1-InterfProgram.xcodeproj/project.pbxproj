@@ -12,6 +12,9 @@
 		7901E30E2335B52F005D2C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7901E30C2335B52F005D2C5E /* Main.storyboard */; };
 		7901E3102335B532005D2C5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7901E30F2335B532005D2C5E /* Assets.xcassets */; };
 		7901E3132335B532005D2C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7901E3112335B532005D2C5E /* LaunchScreen.storyboard */; };
+		793F8474233689AF006C6B13 /* AlumnosTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8473233689AF006C6B13 /* AlumnosTableView.swift */; };
+		793F847623368ACF006C6B13 /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F847523368ACF006C6B13 /* UIColor+theme.swift */; };
+		793F8478233696EE006C6B13 /* AddAlumnoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8477233696EE006C6B13 /* AddAlumnoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		7901E30F2335B532005D2C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7901E3122335B532005D2C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7901E3142335B532005D2C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793F8473233689AF006C6B13 /* AlumnosTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnosTableView.swift; sourceTree = "<group>"; };
+		793F847523368ACF006C6B13 /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
+		793F8477233696EE006C6B13 /* AddAlumnoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlumnoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				7901E30F2335B532005D2C5E /* Assets.xcassets */,
 				7901E3112335B532005D2C5E /* LaunchScreen.storyboard */,
 				7901E3142335B532005D2C5E /* Info.plist */,
+				793F8473233689AF006C6B13 /* AlumnosTableView.swift */,
+				793F847523368ACF006C6B13 /* UIColor+theme.swift */,
+				793F8477233696EE006C6B13 /* AddAlumnoView.swift */,
 			);
 			path = "Sesion13-1-InterfProgram";
 			sourceTree = "<group>";
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7901E30B2335B52F005D2C5E /* ViewController.swift in Sources */,
+				793F8478233696EE006C6B13 /* AddAlumnoView.swift in Sources */,
+				793F847623368ACF006C6B13 /* UIColor+theme.swift in Sources */,
 				7901E3092335B52F005D2C5E /* AppDelegate.swift in Sources */,
+				793F8474233689AF006C6B13 /* AlumnosTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
