@@ -205,5 +205,27 @@ Libros:
 - imdb -> API para cartelera
 
 
--------------------- Curso Intermedio
+------------------------------------ Curso Intermedio
 - https://github.com/iOSLabUNAM/diplomado
+
+---------------- 27/09
+Kanban -> metodologia
+  * To Do
+  * Doing
+  * Done
+    - User story ()
+      * When
+      * Given
+      * Then
+
+https://ioslabunam.github.io/wiki/
+https://github.com/ioSLabUNAM/wiki/
+
+heroku -> cloud
+The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win -> book
+https://fakestagram.docs.stoplight.io/profile/profileshow -> API fakestagram
+
+---------------- 28/09
+https://www.youtube.com/watch?v=3TBq__oKUzk
+
+https://help.github.com/en/articles/syncing-a-fork -> pull desde 
