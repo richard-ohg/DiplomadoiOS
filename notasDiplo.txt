@@ -228,4 +228,10 @@ https://fakestagram.docs.stoplight.io/profile/profileshow -> API fakestagram
 ---------------- 28/09
 https://www.youtube.com/watch?v=3TBq__oKUzk
 
-https://help.github.com/en/articles/syncing-a-fork -> pull desde 
+https://help.github.com/en/articles/syncing-a-fork -> pull desde
+
+---------------
+fligh school -> book
+https://www.sandimetz.com/99bottles -> book
+
+swiftlint autocorrect -> instalar 
