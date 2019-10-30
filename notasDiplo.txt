@@ -234,4 +234,22 @@ https://help.github.com/en/articles/syncing-a-fork -> pull desde
 fligh school -> book
 https://www.sandimetz.com/99bottles -> book
 
-swiftlint autocorrect -> instalar 
+swiftlint autocorrect -> instalar
+
+------------ 11/10
+awesome swift github -> A collaborative list of awesome Swift libraries and resources
+venmo -> https://github.com/matteocrippa/awesome-swift
+
+pod 'DVR' -> paras testeo
+https://www.gitignore.io -> para generar gitignore
+https://www.reddit.com
+https://news.ycombinator.com
+https://yclist.com
+
+---------------
+siempre utilizar leading(left) y trailing(right)
+
+Para modificar esquinas imagen:
+imagen.layer.borderColor = UIColor.black.cgColor
+imagen.layer.cornerRadius = imagen.frame.height/2
+imagen.layer.masksToBounds = true
