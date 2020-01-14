@@ -99,13 +99,13 @@ UITableViewController -> ya contiene los protocolos DataSource y Delegate
 UITableView -> es embebido por lo tanto tienes que utilizar
 
 UIAlertController -> - actionSheet -> sale de abajo y muestra las opciones
-                     - alert -> es una alerta normal en medio de la vista
+										 - alert -> es una alerta normal en medio de la vista
 
 present -> funcion para mostrar vistas
 
 ContextualAction -> para deslizar en un table y hacer una acción
-  - leading -> de derecha a izquierda
-  - trailing -> de izquierda a derecha
+	- leading -> de derecha a izquierda
+	- trailing -> de izquierda a derecha
 
 Contructor falible -> si cumples con los requerimientos te regreso el objeto, sino regresa un nil
 
@@ -113,10 +113,10 @@ Contructor falible -> si cumples con los requerimientos te regreso el objeto, si
 
 ---------------------- 30/08
 REST
-    - POST
-    - GET
-    - UPDATE
-    - DELETE
+		- POST
+		- GET
+		- UPDATE
+		- DELETE
 
 https://jsonformatter.org/json-pretty-print
 
@@ -139,11 +139,11 @@ cocoaPods -> instalacion de bibliotecas de terceros
 
 - pod init
 - en el archivo PodFile agregar
-      pod 'Firebase/Core'
-      pod 'Firebase/Auth'
-      pod 'Firebase/Firestore'
-      pod 'Firebase/Storage'
-	    pod 'Firebase/FirebaseUI'
+			pod 'Firebase/Core'
+			pod 'Firebase/Auth'
+			pod 'Firebase/Firestore'
+			pod 'Firebase/Storage'
+			pod 'Firebase/FirebaseUI'
 - pod install
 
 Nota: Siempre tenemos que abrir el .xcworkspace porque ya tiene las ligas para las bibliotecas que tiene pods
@@ -193,14 +193,14 @@ Libros:
 -------------------- 20/09
 - MockFlow -> para modelado
 - Para hacer interfaz programatica:
-    * primero modificar AppDelegate
-        º dismiss - present
-        º pushViewController - popViewController
+		* primero modificar AppDelegate
+				º dismiss - present
+				º pushViewController - popViewController
 
 - Libros:
-    * Soft Skills: The software developer's life manual
-    * Clean Code: A Handbook of Agile Software Craftsmanship (Robert C. Martin)
-    * The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin Series)
+		* Soft Skills: The software developer's life manual
+		* Clean Code: A Handbook of Agile Software Craftsmanship (Robert C. Martin)
+		* The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin Series)
 
 - imdb -> API para cartelera
 
@@ -210,13 +210,13 @@ Libros:
 
 ---------------- 27/09
 Kanban -> metodologia
-  * To Do
-  * Doing
-  * Done
-    - User story ()
-      * When
-      * Given
-      * Then
+	* To Do
+	* Doing
+	* Done
+		- User story ()
+			* When
+			* Given
+			* Then
 
 https://ioslabunam.github.io/wiki/
 https://github.com/ioSLabUNAM/wiki/
@@ -253,3 +253,91 @@ Para modificar esquinas imagen:
 imagen.layer.borderColor = UIColor.black.cgColor
 imagen.layer.cornerRadius = imagen.frame.height/2
 imagen.layer.masksToBounds = true
+
+------------------ 30/11
+
+UIKit es un framework que contiene el main run loop, vistas,
+
+UIApplicationMain -> es lo primero que se va a arrancar (se ejecuta la función), la directiva @UIApplicationMain es la que crea esto con los valores por default
+
+* Crea -> Application y AppDelegate
+
+		> Nota:
+			De padre a hijo -> strong
+			de hijo a padre -> weak
+
+* Busca en el info.plist cual es el archivo NIB o Storyboard para cargar en memoria
+
+* Carga el root View controller y pone la vista de este sobre window
+
+- Herencia:
+
+		UIResponder
+			|
+			v
+		UIView
+			|
+			v
+		UIWindow
+
+
+- Secuencia:
+
+	Application
+			|
+			| strong
+			|
+			v
+	AppDelegate
+			|
+			|
+			|
+			v
+		Window
+			|
+			|
+			|
+			v
+root View Controller
+			|
+			|
+			|
+			v
+		View
+
+
+- todos los eventos llegan al "UIApplication" en el método "sendEvent"
+
+- UIResponder -> tiene la logica para manejar eventos
+
+- biblioteca vs framework
+
+	> la diferencia es quien tiene el control, en un framework él decide qué se hace y cuando se hace
+
+- delegados <-> composición
+
+- MVC -> MVP
+
+------------------------------ 7/12
+
+libro arquitectura -> https://www.amazon.com/-/es/Len-Bass-ebook/dp/B009GMUL84/ref=pd_sim_351_1/137-1814884-4449028?_encoding=UTF8&pd_rd_i=B009GMUL84&pd_rd_r=15185f64-6e0e-482d-8785-08abbb5b5fe0&pd_rd_w=mp8Po&pd_rd_wg=3OBLq&pf_rd_p=04d27813-a1f2-4e7b-a32b-b5ab374ce3f9&pf_rd_r=ZZCXCBDT3852G55BHGB5&psc=1&refRID=ZZCXCBDT3852G55BHGB5
+
+
+	arreglos 	tuplas	diccionario		conjuntos	   enums		structs		clases
+		|			|		|				|			|				|			|
+	-----------------------------------------------------------------------------------------
+	|																						|
+simple																					complejo
+
+- enums -> permiten restringir el tipo de dato y los valores permitidos
+
+
+------------------------------- 14/12
+
+* Manejo de Errores
+
+breakpoint types:
+
+- swift error breakpoint -> para cuando tenemos un error que truene la aplicación
+- exception breakpoint ->
+- symbolic breakpoint -> podemos poner un breakpoint en el nombre de una funcion sin importar que esta no sea de nosotros, se detiene cuando se manda a llamar la función y ver quien  la manda a llamar  
