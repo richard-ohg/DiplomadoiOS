@@ -341,3 +341,10 @@ breakpoint types:
 - swift error breakpoint -> para cuando tenemos un error que truene la aplicación
 - exception breakpoint ->
 - symbolic breakpoint -> podemos poner un breakpoint en el nombre de una funcion sin importar que esta no sea de nosotros, se detiene cuando se manda a llamar la función y ver quien  la manda a llamar  
+
+
+--------------------------------
+
+memoria virtual -> para que un programa pueda correr necesita ejecutarse en la RAM, entonces se hace el proceso de envio del disco duro a la  RAM. 
+
+Practical Cryptography for Deelopers book - https://github.com/nakov/Practical-Cryptography-for-Developers-Book
