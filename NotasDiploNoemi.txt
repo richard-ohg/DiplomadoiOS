@@ -1,0 +1,1310 @@
+NOTAS DIPLOMADO COMPLETAS
+
+Presentación
+1.- ¿De que trata la idea?
+Encontrar el ¿Por qué?
+
+2.- ¿Cómo lo pienso hacer?
+¿Cómo lo voy a solucionar?, Se busca que apoye a la comunidad universitaria
+
+5 capturas de pantalla y un video de no más de un minuto
+Presentación
+Trabajo escrito no mayo a cinco cuartillas
+World Wide apple
+
+————————————————————————————————————
+
+Diplomado: 
+Objeto: instancia de una clase.
+
+Un ejecutable toma cualquier dirección de memoria.
+
+Las aplicaciones en iOs son paquetes y en Android son programas.
+
+ABI es la librería estándar de cómo funciona nuestra aplicación en IOs hasta versión 4.
+
+En memoria no puedes incrementar un objeto “x++”.
+
+En Swift tiene herencia simple.
+Los protocolos en Swift sí permiten herencia múltiple porque son multidireccionales. 
+
+La union entre un componente y su código se llama interface builder.
+
+Product Name: Nombre de la App
+Team:  None
+Organization Name: Industrias patito
+Orfanization Identifier: com.ioslab
+Bundle Identifier: Se hace sola
+Language: Swift (Dependiendo de lo que se vaya a hacer)
+Use Core Data: base de datos de la app
+Include Unit Tests: Para ver si funciona bien la aplicación.
+
+La palabra super manda a llamar a la función de clase que estás hederando.
+
+
+Conceptos:
+Launcher
+Kernel
+Open DSD
+Bytecode
+Bitcode
+Estándar de Marsipal
+Objetive-C
+Chip Bionic
+Pattern mating
+
+Temas:
+Closures
+Optionals
+
+
+
+
+Nota:
+Programa canserbero para poder instalarlo en el celular en Android y podamos controlar todo el teléfono.
+
+“When I lost my phone” - video
+
+Editoriales para cuestión de programación:
+Packt pub
+Apress
+
+Libros: 
+Intro to App Development with Swift
+App Development with Swift
+
+———————————————————————————————————— 
+
+Diplomado 2: 
+App Delegate: estados de la aplicación (pasarlos a segundo plano, si vamos a tener que guardar datos, si tenemos que gestionar un video)
+En iOS tenemos 10 minutos de background
+El Main manda a llamar el AppDelegate y este al UIApplication (Finishing Launching)
+
+
+
+Diplomado Semana 2 día 2:
+Status bar: información de tu equipo (Si está conectado a bluetooth, apps en segundo plano, la hora, nivel de tu batería, etc…)
+
+UIKit: framework para programar y desarrollar aplicaciones en iOS:
+Cocoa Touch : Dentro de esto está el UIKit
+Media : Video, imagen, audio. Frameworks con servicios del sistema
+Core Services : operaciones asíncronas, bluetooth y todo el hardware de conexiones
+Core OS : es una extensión de Mac corriendo sobre un dispositivo móvil
+Está escrito en C y C++
+
+Dentro de UIKit:
+UIKit
+UIResponder
+Hardware
+Nos provee infraestructura para desarrollar las aplicaciones
+
+UINavigationBar : Título y botones
+UITableView : Listas y cada celda es un IUTableViewCell
+MKMapView
+UIsearchBar
+UISegmentedControl
+UICollectionView
+*La interfaz está en un hilo principal
+UITabBar
+Costum UITexField
+Navigation Bar: Da la navegación, la vista
+Modal Navigation : Barra que se abre desde abajo
+
+La base de todo ViewController es UiWindow y es la base de la aplicación. Y este UIWindow es una subclase de UIView
+
+
+Diccionarios
+
+————————————————————————————————————
+
+Diplomado 3:  
+El Window es el que maneja toda la navegación en la aplicación
+
+Antes de que monte el window y ponga el view controller, main crea la instancia de app delegate.
+
+ViewdidLoad: es cuando se carga la memoria y es el primero que corre.
+ViewWillAppear: preparación para que aparezca en la pantalla.
+ViewBecomeActive
+
+UIResponder: donde tocamos
+IUTouch: le pasa los touches a UIResponder
+
+touchesBegan: aquí se detectan los objetos de IUTouch
+
+
+Día 2
+
+NULL: ausencia de valor
+Siempre que queramos alojarnos en una dirección de memoria necesitamos optionals
+“El libro negro de los algoritmos”
+Stripe se podría utilizar para hacer cobros si requerimos una app de cobro
+Cuando la aplicación “crashea” es porque non sabe manejar los nulos. Se usan optionals porque no sabemos si nos va a llegar un valor, por lo tanto se considera que esto puedo ser nulo.
+
+LOADER VIRTUAL MACHINE: Stack de compiladores 
+
+Segue: Información del origen y del destino
+
+XIB : Con este se desarrollan componentes
+Ventanas modales : para cuando la contraseña es incorrecta. Información temporal
+
+
+Stack
+Self
+
+
+https://www.devslopes.com
+https://books.goalkicker.com
+http://www.appbuildersacademy.com
+
+————————————————————————————————————
+
+Diplomado 4: 
+Tipo enumerado: cuando quiero que las referencias tengan una dinámica sobre los datos. En caso contrario sería un diccionario o un arreglo.
+
+TCO: Costo Total de Propiedad
+Valor residual
+FFF (Friends, Family and Fools)
+
+Vender números y cómo solucionarlo
+
+DIA 2
+Clases
+Las estructuras de manejan por valor (contenido). Es una colección de tipos de datos primitivos.
+
+Clase: Es una estructura pero con apuntadores.
+
+Cuando son estructuras no se pasa el original, si no la copia.
+Con apuntadores si hace cambios al original y se hace una referencia.
+Si no hay herencia no tienes porque crear una clase.
+
+Las variables en clases son de tipo led y no van a cambiar.
+
+Books
+Cracking the Coding Interview: 189 Programming Questions and Solutions
+Advanced Swift www.objc.io/books/advanced-swift/
+Introduction to Algorithms Thomas H. Carmen
+
+Inyectar código: mandar todo a una referencia
+
+Heap: aquí se va una referencia creada (referencias dinámicas, referencias de memoria). Este es más lento.
+Stack: queremos soluciones inmediatas o estamos creando algo y se destruye. Todo aquello que tenga uso inmediato va a aquí.
+
+
+Mutabilidad: que cambia en tiempo de ejecución.
+Las funciones dentro de una clase son mutables, en una estructura no
+Estructuras tipo var y clases tipo let.
+Las estructuras van en el stack
+
+Protocolo: Contrato que las clases tienen para poder implementar metodos.
+Protocolo Obligado: basados en Swift. 
+Protocolo Opcional: hecho en Objetive C es opcional
+
+UITableViewDataSource protocolo implementado en Objetive C.
+Protocolo que te permite desplegar la información de una tabla.
+
+UITableViewDelegate: comportamiento no obligado.
+
+
+The App and mobile case study book. Julius Wiedemann
+
+
+super. = Método clase superior inmediata. 
+final = para terminar la herencia
+
+Vamos a utilizar una herencia si queremos particularizar. (Button to top) Se modela de abajo hacia arriba (de lo particular a lo general)
+
+POP
+
+————————————————————————————————————
+
+Diplomado 5: 
+
+Protocolo, medio que orienta a los objetos.
+Swift también se podría decir que es orientado a protocolos.
+
+Editor -> Embed in -> Navigation Controller (Para tener más barras de navegación)
+
+https://www.uicolor.xyz/#/hex-to-ui
+http://www.flatuicolorpicker.com/red-hex-color-code
+
+En el AppDelegate es donde empieza a correr la aplicación y los colores. 
+
+Jerarquía de ViewController
+
+Main: Instancia o crea el AppDelegate
+AppDelegate: crea un window que es la ventana de la aplicación y solo hay un window por aplicación. Ese window tiene un ViewController donde inicia la aplicación (es el root de UIWindow).
+Root: El window tiene el rootViewController y sobe ese root va a ir toda la navegación de la aplicación.
+
+UIWindow -> UINavigationController -> ViewController
+
+La navegación push pone un ViewController encima del otro.
+
+CLOSURES
+Bloques autónomos funcionales
+Las funciones son casos especiales de closures
+Declaración de los closures -> { parameters) -> return type in statements }
+In es la palabra reservada y señala donde empieza la declaración y las lineas que meteremos en el código
+
+Sirve para hacer animaciones, recibir datos y pasar datos entre ViewControllers.
+
+Dia 2:
+Evita linealidades. Sirve para mandar proceso en background y para inyectar código.
+
+Estructura: tipo de dato por valor
+
+Observadores : Ayudan a ver en que momento, se cambio el valor, se va a cambiar o permanece constante.
+
+————————————————————————————————————
+
+Diplomado 6: 
+Las funciones son casos especiales de Clousures
+
+https://developer.apple.com/videos/topics/ The Life of a Button
+
+
+Tarea: animaciones a los text Field para cuando falte un campo o este en error se pongan en rojo, tiemblen un segundo o dos y vuelvan a la normalidad
+Poner las nubes que se muevan de un lado para otro con los assets y que de repente suba el globo. Todo eso va sobre el log in
+
+
+
+——————————————UITABLEVIEW—————————————————
+Puente entre UIViewController y UITableView se llama Data Source (tamaño y qué va a mostrar a través de celdas) llamado UITableViewCell
+
+Otro puente que es bidireccional es Delegate y este le dice de qué tamaño serán las celdas, cuántas celdas se ven en pantalla y secciones; y el TV le tira al VC qué celda tocó el usuario y el VC podrá tomar acciones dependiendo de la celda que toco.
+
+Delegate, capta todas las interacciones, el scroll , a qué velocidad se scrolled, toda interacción que tenemos como usuario se le comunicara y la interfaz al VC a través del Delegate.
+
+DataSource, cómo se va a llenar 
+
+        UIViewController
+           |                      ^
+Data   |                      |
+Source|                     | Delegate
+ Swift  |                      |   C
+           |                      |
+           v                     v
+UITableView.            UITableView
+
+
+Data Source y Delegate son protocolos para comunicar dos objetos
+TableView se maneja a través de arreglos
+
+http://www.thinkandbuild.it
+
+
+
+
+Día 2
+
+Optionals
+Closures
+Protocols
+
+-Carrito de compras
+2 listas, un catálogo a través de una tabla
+Click en el catalogo, foto y precio. Text field donde se pone la cantidad de de productos e ir acumulando el total de ítems y el pago.
+-Instagram
+
+CLOSURE
+Pedazo de código que no tiene nombre, función anónima.
+Una función en Swift te regresa una tupla vacía
+Puede asignarse a una variable porque tiene una dirección de memoria
+
+PROTOCOLO
+Interfaces en java que dan mas habilidades sin tener herencia múltiple y en vez de interfaces serían protocolos
+
+ESTRUCTURAS
+Las estructuras no se pueden manejar el protocolo de objetive c
+
+POLIMORFISMO
+Diversas formas en que un objeto responde un mensaje
+
+
+————————————————————————————————————
+
+ Diplomado 7:
+
+CONTRAINTS
+Restricciones que permiten decidir como colocarse, de qué forma.
+
+Https://developer.apple.com/wwdc19/scolarships/
+
+Swift básico
+var, let
+String, Int, double, Float, Bool
+Struct, Class, Enum
+POO, Herencia, Encapsulamiento y Polimorfismo
+ViewController
+Segues
+Inyección de clase
+TableViewController
+Closures
+Optionals
+	Optional Binding
+	Force unwrapped !
+	Nil Coalescence
+	Guard
+Protocols
+POP
+@IBOutlet @IBAction
+
+
+Swift intermedio
+Services
+JSON
+Protocolo codable
+.XIB
+CollectionViewController
+Extensions
+Backend
+GIT
+Autolayout
+Patrones de Diseño
+Grand Central Dispatch
+Alertas
+Firebase y concurrencia 
+
+github.com/iOSLabUNAM/diplomado/issues/1
+https://github.com/ameizi/awesome-ios-animation
+
+Tarea : Crear perfil por TableView
+
+Icons8 
+
+
+DIA 2
+
+Extensiones.
+No tengo que ir hasta el código fuese y modificarlo. Si no  que se agrega la funcionalidad a la clase o protocolo para que lo haga.
+Las extensiones te dan habilidades.
+
+Protocolo.
+Obliga a implementar objetos.
+
+JSON (Java Script Object Notation)
+
+————————————————————————————————————
+
+Diplomado 8: 
+https://portal.macincloud.com/select/#/plans
+
+Auto Layout
+Views conectados entre si para que cuando se cambie de pantalla cambie de tamaño el View también.
+Se le tienen que agregar a los Views reglas (constrains).
+4 Constrains básicos
+Trailing
+Leading
+Top
+Button
+——————————————DIA 2————————————————
+
+Un CollectionView no existe si sus elementos no encuentran la forma de desplegarse (Layout)
+
+cmd+shift+7 : Comentas todo de un jalón
+
+
+COCOAPODS INSTALL
+ pod init
+ ls -la
+ more Podfile
+
+ nano Podfile
+ pod install
+
+Práctica con scroll View.
+URL session
+Desarrollando aplicaciones con Swift
+
+————————————————————————————————————
+
+Diplomado 9:
+ 
+
+
+DUDAS:
+¿CÓMO CAMBIAR LA VISTA EN HORIZONTAL SIN QUE SE MUEVA?
+
+https://phlntn.com/emojibuilder/
+
+Storyboard ID “ImageVC”
+
+
+————————DIA 2
+
+git init
+ls 
+git status
+git commit -m “first commit”  
+git remote add origin LIGA
+git status
+git push -u origin master   
+
+
+Documentación de la API de Fakestagram
+Https://fakestagram.docs.stoplight.io 
+
+————————————————————————————————————
+
+Diplomado 10 :                             Luis Escurdia
+
+Agile Manifesto
+
+SCRUM books
+
+Planning
+
+Cuando
+Dado
+Entonces
+
+HISTORIAS DE USUARIO
+
+//CREATE ACCOUNT
+	⁃	CUANDO el usuario quiere ingresar a la aplicación DADO que el usuario no existe ENTONCES se manda a un token. Dif: 1
+	⁃	CUANDO el usuario quiere ingresar a la aplicación DADO que el usuario existe ENTONCES se genera una petición para poder ingresar. Dif: 1
+
+//POST
+->GET POST
+	⁃	CUANDO el usuario se encuentra en una lista DADO que desea saber el detalle del post ENTONCES se obtiene la información mediante su id. Dif: 3
+
+ ->UPDATE POST
+	⁃	CUANDO el usuario se encuentra en un post propio DADO que desea hacer un request put ENTONCES obtiene su información mediante el id. Dif:2
+
+ ->DELETE POST
+	⁃	CUANDO el usuario se encuentra en un post propio DADO que desea un request delete ENTONCES se envía el id
+
+ ->LIST POST
+	⁃	CUANDO se ingrese a la aplicación DADO que se tiene un token ENTONCES se obtiene la información de los post
+
+ ->CREATE POST
+	⁃	CUANDO se desea subir un objeto DADO que ya tienes una cuenta ENTONCES realiza un post con todos los datos
+
+//PROFILE
+
+CUANDO el usuario se encuentra navegando en la aplicación DADO que desea visualizar un perfil ENTONCES se realizan dos request:
+->SHOW CURRENT PROFILE
+->SHOW PROFILE POSTS
+
+//LIKE
+ ->SHOW POSTS LIKES
+	⁃	CUANDO el usuario se encuentra en un post DADO que desea visualizar el detalle de los likes ENTONCES se obtiene la información
+
+ ->CREATE LIKE
+	⁃	CUANDO el usuario se encuentra en un post DADO que desea dar un like ENTONCES hace un request post para obtener el id del like
+
+ ->DELETE LIKE
+	⁃	CUANDO el usuario desea eliminar un like DADO que se encuentra en un post ENTONCES se realiza un request delete
+
+//COMMENT
+ ->LIST COMMENT
+	⁃	CUANDO se desea ver los comentarios de un post DADO que se esta visualizando un post especifico ENTONCES se realiza una petición get a partir del post id de interés
+
+ ->CREATE COMMENT
+	⁃	CUANDO se desea hacer un comentario DADO que se desea hacer un comentario especifico ENTONCES se realiza un post request con la cadena por escribir a partir del post
+
+->GET COMMENT
+	⁃	CUANDO el usuario quiera visualizar un comentario DADO que se encuentre en un post ENTONCES se hace un request get del id del comentario
+
+ ->UPDATE COMMENT
+	⁃	CUANDO el usuario desea actualizar un comentario realizado DADO que se encuentra en un post previamente comentado ENTONCES se realiza un request put
+
+ ->DELETE COMMENT
+	⁃	CUANDO el usuario desea eliminar un comentario DADO que se encuentra en un post previamente comentado ENTONCES se realiza un request delete
+
+
+
+PASARLO A GITBUT EN ISSUES
+Crear proyecto y después issues
+
+Practical Oriental Design - Sandy
+
+Kubernetes
+Como obtener el nombre de los dispositivos de iOs en un enum. Como en airdrop
+https://stackoverflow.com/questions/1100127/how-do-you-get-an-iphones-device-name
+
+Como generar un UUID dentro de iOs
+https://stackoverflow.com/questions/24428250/generate-a-uuid-on-ios-from-swift
+
+https://stackoverflow.com/questions/45024435/generating-uuids-with-swift
+
+Como generar un numero de serie de dispositivo o un generador unico.
+https://stackoverflow.com/questions/21602161/how-to-get-device-serial-number-programmatically-in-ios
+
+
+
+
+——————————DIA 2————————————
+RECURSOS 
+Cosas que no encuentras en un libro (información).
+https://ioslabunam.github.io/wiki/
+Para tener iconos del nav bar. Por default ya vienen pero deben de ser de 48 pts.
+Https://icons8.com/ios
+Para diseño de colores.
+https://coolors.co
+
+El Fakestagram se debe hacer con un Collection View ya que con el Table View es muy limitado a poner información.
+
+FEATURE BRANCH aplicando a un fork flow
+-Se forkea
+-Se clona el proyecto de Luis
+-Se abre un branch
+-Modificas, commit y lo subes
+-Pull request (se acepta, se hace el merge a master)
+-Se sincroniza (se agrega un remoto “upstream”)
+
+Estos links son para hacer merge y para poder hacer branch a nuevas actualizaciones de los iconos en terminal
+https://help.github.com/en/articles/syncing-a-fork
+https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent SSH Key
+Git Cheat Sheet
+
+
+git fetch upstream
+git merge upstream/master
+
+git push origin master
+
+
+MODELO VISTA CONTROLADOR
+View - interfaz de usuario y lo presenta al usuario
+Controller - orquestador(es el que lleva la lógica), también el modelo lo és.
+
+
+Hacer una rama con el nombre git checkout -b noemi-rodiriguez
+git status 
+git diff
+git commit -am “Define PostAuthorView layout and SVFView constraints”
+git push origin HEAD (se sube al propio branch)
+
+————————————————————————————————————
+
+Diplomado 11
+
+Try git
+
+Ira
+Time.now
+Time.now.utc
+Time.now.utc.iso8601
+
+Pruebas asíncronas	
+Principios SOLID
+
+————————————————————————————————————
+
+Diplomado 12
+Para correr el script
+brew install imagemagick
+Git clone https://github.com/smallmuou/ios-icon-generator
+
+Imagen de 1024 x 1024
+
+————————————————————————————————————
+
+Notas
+
+¿Qué se refiere con texto plano?
+Guardar en disco
+Token
+¿Cómo trabajar en xib?
+¿Qué es un json?
+¿Qué es un awake from nib?
+
+Guardar en cache y en disco
+
+
+https://github.com/3zcurdia/fakestagram-ios/commit/34182a1a049e620389f8115e16fc90f47a590f8b
+
+
+
+Instagram 
+https://www.ductran.co/instagram
+
+TDD
+
+manuelsan1994@hotmail.com
+
+Codable 
+Fly School
+
+
+37419490
+
+Pod init
+Atom podfile
+Pod ‘SAMKeychain’
+Pod install
+Git status
+ Archivos nuevos podfile, podfile.lock, worksapce
+Open workspace
+
+https://github.com/soffes/SAMKeychain
+
+————————————————————————————————————
+
+Notas Mayo
+
+EC Code
+DevOps
+(Fork Bomb)
+https://ruby.github.io/TryRuby/
+Heroku, backend para la aplicación
+
+————————————————————————————————————
+
+Diplomado día 27 NOTAS RODRIGO
+
+Módulo de avanzado
+
+Norberto Ortigoza
+Twitter: @Hiphoox
+Correo: norberto@bunsan.io
+
+Meterse al lenguaje de programación Rust.
+
+
+Libros:
+	⁃	Aprende Swift en 3 segundos
+	⁃	Rus para principiantes
+	⁃	Crea sitios increíbles con Elixir y Phone 
+
+Var -> Lo que puede cambiar es a lo que apunta la variable, no necesariamente quiere decir que el contenido o valor no pueda cambiar. Lo que dice es que la variable es mutable, mas no necesariamente el valor.
+
+
+Checa el tipo, después checa el tamaño de la tupla.
+Si enumerated tiene tuplas 
+[(1,2), ( , ), ( , )]
+(Indice, libro) = (1,2)
+A nivel de estructura está diciendo lo que está del lado izquierdo es igual a lo que está del lado derecho, es decir, hace match. Porque incluso ambos son una tupla. Por eso se llama pattern matching.
+
+El let quiere decir que la variable ya no puede variar, esto quiere decir que la variable se vuelve inmutable.
+
+¿Qué es el Garbage Collector?
+El Garbage colector tiene que ser un programa.
+Ese programa lo que tiene que hacer es estar viendo el programa que nosotros programamos, ver la memoria que usas, detectar qué bloques de memoria se están usando o ya no se están usando. Tiene que hacer un escaneo de la RAM. Y todo esto está corriendo dentro de un proceso.
+El colector de basura, como cualquier programa, necesita CPU y también ocupa RAM.
+El SO del iPhone checa si el programa está consumiendo demasiada memoria, si lo hace, el SO lo va a matar.
+En C y C++ no tenemos el GC.
+Nadie puede saber cuando el GC se despierta y elimina la basura. Es por ello que se dice que es “No determinístico”.
+En C y C++ yo sé en qué momento exactamente se libera la memoria (con un free) por eso ahí se dice que es deterministico.
+¿Qué ventaja tiene eso? Que no pasa tiempo después de que ya no se ocupa memoria no necesaria.
+Con tanto poder, podemos tener fugas de memoria si no la liberamos, ese es uno de los errores que yo puedo tener. Si nuestro programa tiene una fuga de memoria, el sistema va a ir pidiendo más y más porque no la libera. Esto es más peligroso cuando es un sistema de BackEnd.
+Otro problema que puede suceder es que se libera la memoria cuando aún se va a seguir utilizando, eso es un segmentación fault. En ese caso, todo el programa se muere.
+El tercer problema es intentar liberar la memoria más de una vez.
+
+
+Todo objeto recién creado, va a nacer con un contador de uno. Mientras ese contador no sea igual a cero, el objeto va a estar vivo en memoria, va a permanecer ahí. Ese contador podrá ir aumentando y también va a poder decrementarse. Pero en el momento en que llega a cero, en ese preciso instante el objeto es destruido. Ese es el principio básico del conteo de referencias.
+
+¿Qué significa o qué representa el contador?
+Existe algo que es el dueño del objeto. Todo objeto que exista en memoria va a tener un dueño. Ese dueño es quien lo haya creado. Quien haya creado al objeto en ese momento se vuelve su dueño y por eso tiene el contador de 1. El dueño es responsable de que si ya no lo va a usar el contador lo decremente. 
+En el reference counting, no es que yo esté liberando o destruyendo al objeto directamente, lo único que voy a poder hacer es que pida decremento o aumentar su contador, pero no lo elimino en el instante.
+
+
+Con alloc se crea y tiene contador en 1.
+Si ahora alguien más le manda un mensaje de retain, ahora su contador aumentará a 2 y ambos ahora son dueños del plumón.
+¿Qué pasa si después de eso, alguien lo deja de usar? Pues se decremento el contador, con la instrucción release 
+Release no significa destrucción del objeto ni liberar su memoria, sólo decremento el contador.
+Si otros 3 lo quieren usar, hacen la instrucción de retain, y ahora su contador aumenta a 4.
+
+Conteo de referencias es equivalente a tener un bote de basura y decir “Ok no tengo a nadie que esté recogiendo todo” Aquí es como decir que yo me comprometo a tirar la basura en un solo lugar, yo me hago responsable de eso, y alguien va a venir y se lo va a llevar. Consume tiempo pero es menos, porque así ya no tengo que estar buscando basura en toda la casa. Es como un punto intermedio. Esa es la estrategia del conteo de referencias.
+Es por eso que las aplicaciones en Obj-C y Swift son más rápidas que en Java.
+
+Todo esto de
+	⁃	Alloc
+	⁃	Retain
+	⁃	Release
+
+Se llama MRC -> Conteo de referencias manual
+Con eso se puede aprender a programar en Objective-C.
+
+El 90% del crasheo de las aplicaciones era por este tema que se vio. 
+Se dieron cuenta de que esto se podía automatizar, así que nación el
+ARC -> Automatic reference counting
+Lo que hicieron fue meterle más inteligencia al compilador para que fuera el que se encarga de inyectar los retain y releases en nuestros programas. Nosotros no lo vemos pero el compilador está haciendo eso.
+Esto no lo hace cuando el programa se está ejecutando, sino cuando compila y es por eso que es más rápido. Cuando corre el programa ya no tiene que hacer nada. Esto es lo que hemos estado usando en Swift, así es como funciona.
+
+Pareciera que estamos trabajando con un Garbage colector peeero sin pagar el precio tan alto. El Garaje colector lo hace en tiempo de ejecución del programa, es por eso que llega a ser más lento.
+
+
+Tips de qué herramientas tener:
+	⁃	Hopper Disassembler -> Es un desensamblador
+
+Primer punto:
+UIResponder puede responder a eventos.
+Todas las vistas pueden recibir eventos, porque heredan de UIResponder.
+
+Segundo punto:
+UIView tiene la capacidad de embeber a otros UIViews, y como todos son views, se puede ir embebiendo vistas. Cada vista es un componente.
+El activity en Android no puede hacer eso.
+Los fragmentos tratan de resolver esos problemas que los activities no pudieron, pero ni aún así lo implementan tan bien. 
+
+El AppDelegate también puede recibir eventos, los puede manejar.
+
+
+Memory Management
+
+La memoria no sólo se va a RAM solito así como sin nada.
+Todo SO tiene el concepto de procesos. El proceso es una especie de càpsula donde el programa está adentro y el programa ahí se ejecuta, pero es un contenedor. ¿Por qué quiero que se aísle? Por que si el programa tiene un bug, no queremos afectar a los demás.
+Un proceso se divide en tres secciones:
+	⁃	La sección donde está el código, nuestro programa, se llama DATA. ¿Qué cosas pueden estar aquí? Nuestros objetos, variables, etc. Esta sección sirve para guardar el programa.
+	⁃	Stack: Sirve para almacenar variables locales de las funciones. Cada cajita del Stack, se llama Frame y tienen tamaños variables dependiendo del número de variables locales. Si main manda a llamar otra función, se hace un push. ¿Qué representa el stack? El flujo de ejecución del programa. El Stack me dice el orden en que estoy llamando las funciones, pero me sirve para guardar su información. Cuando se hace un pop, se va liberando cada bloque. En realidad no es que el pop la destruya, sino que sólo se mueve el Stack pointer.
+	⁃	Heap
+
+El main NO es la primer cosa que se ejecuta en un programa en C. La primer función que se ejecuta en un programa es llamada start(). Es una función que viene en la parte del runtime de C. Parte de lo que tiene que hacer es llamar a main().
+Cuando se manejan hilos, cada hilo tiene un stack diferente, porque tienen flujos diferentes de ejecución, perro todos ellos comparten el mismo heap y el mismo data.
+
+————————————————————————————————————
+
+Diplomado Norberto
+El interface builder no es un generador de código.
+Fossil (como GitHub pero mejor)
+Fishshell.com (para trabajar en la terminal)
+
+Memory management
+HEAP - Area dentro del proceso que no tiene estructura, solicita memoria de manera dinámica (objeto)
+Apuntador - guarda dirección en la memoria del HEAP
+
+En el STACK se guarda la memoria en el HEAP
+
+.h - API público de la clase
+.m - privado
+
+OWNERSHIP (manejo de memoria)
+Si se utiliza una referencia “week” no va a aumentar el contador pero si es una referencia “strong” su contador se incrementa. Por default la referencia va a ser strong.
+dealloc - se manda a llamar cuando un objeto es destruido y hacer un relist de cada objeto que será destruido
+
+Release: decrementa el contador
+Retain: aumenta el contador 
+ 
+Ciclo principal (runloop o mainloop) - 
+
+No generar referencias cíclicas y usar referencias strong o week para evitarlas
+
+Autorelease pool
+
+————————————————————————————————————
+
+REPASO 1:
+Stack
+Flujo de ejecución del programa.
+Se guardan las variables.
+Se guarda la estructura de Swift porque es más rápido por problemas de ejecución.
+
+Heap
+Los objetos se guardan en el HEAP.
+
+Conteno de referencia manual: se hace relist y retain.
+ARC conteno de referencia automático: ya no se hace relist y retain.
+
+Optional: Variable cuyo tipo de dato le permite guardar su valor especificado (int, char) y nulo. Sirve para soportar “nill”.
+	Ejemplo: Persona p; (soporta persona y soporta nill)
+	En todos los lenguajes de programación todas las variables son opcionales ya que “Optional” no es especifico de Swift.
+
+	**Lo que hace diferente Swift es forzar variables a no ser nulos. Porque si no se verifica que tiene un valor el programa hace “null crash”.
+	**Todas las variables que se declaran en Swift son “no opcionales”.
+	**1.- El compilador va a asegurarse y decir de que las variables están bien, o sea, que tiene valor por estar incicializado.
+	**2.- Si declaro una variable como opcional entonces el compilador va a verificar que manejemos los dos casos, cuando venga valor y cuando venga nill.
+	***Nunca se debería usar el signo de admiración (forzar hacer el unwrapped de un opcional). Toda la verificación del compilador se deshecha con este forzamiento.
+
+Atuorelease pool: Es quien va a recibir a los objetos que ya no quiere el owner. Con la instrucción “autorealease”.
+
+	◦	Mainloop: Ciclo principal que corre en el threat principal (primer threat que se crea en el inicio de cada sistema operativo). Vacía el autorelease pool, es lo último que se ejecuta en el ciclo. Libera la memoria como: autorelease pool -  drain.
+
+Pantalla capacitiva eso tienen los iOs. Al tocarlo completa el circuito y genera la corriente una interrupción al Sistema Operativo para crear un evento que lo va a recibir 
+	**Proceso: para correr un programa. Dar un contexto de ejecución de un programa. Necesita estar en RAM, Stack , Heap.
+	**PS: listado de los procesos que se están ejecutando en las computadoras. Window Server proceso que es parte del sistema operativo. Este recibe el evento y decide a qué aplicación va. Llega en 	orden y la aplicación debería sacar de la cola el proceso y responder.
+
+	•	La primer tarea que pasa en el main loop es ir y ver si se tiene algún evento en el Q, uno por uno. Con el UIApplicationMain es donde empieza el programa y este recibe todos los eventos después del Q.  El AppDelegate es el que hereda de UIResponder y recibirá el evento también. El AppDelegate se lo pasa a UIWindow y este tiene vistas y se lo va a ir pasando a las vistas hasta que llegue a la vista que le responde con base a las coordenadas de dónde se apretó o se dió click. Finalmente el botón recibe el evento.
+
+	1.- Sacar el evento de la cola.
+	2.- Rutear el evento. (Q, UIApplicationMain, AppDelegate, UIWindow, todas las ventanas).
+	3.- Se ejecuta el ViewController, manda los datos y vuelve a marcar (repintar) las vistas. Si estas no se repitan no se van a ver los datos nunca.
+		(Todas las vistas que llegan a sufrir cambios se van a marcar en el ViewController y cuando llegue al punto de repintar solamente va a pintar las que estén marcadas). Esta lógica la resuelve 			CocoaTouch.
+	4.- Vuelve a sacar el siguiente evento liberando memoria antes de volver a llamar el evento.
+	*** Jamás bloquear el threat principal de la aplicación.
+
+	Cuando la aplicación está en background todavía utiliza CPU pero deja de recibir eventos y después de cierto tiempo se pasa a un estado de inactivo y aquí solo está “dormido” ocupando solo lo que 	ocupa de RAM. *se verá a detalle cuando se vean estados de la aplicación.
+
+	◦	Memoria virtual: Mecanismo a través del cual el sistema operativo hace creer a cada programa que tiene acceso a toa la RAM pero no es así. Siempre será de manera indirecta, el proceso no tendrá acceso a la memoria física. El sistema operativo trabaja como intermediario. Con esto garantiza el aislamiento de cada proceso.
+ES UN PROCESO AISALDO Y CUBRE TEMAS DE SEGURIDAD 
+
+	◦	Swap: Mecanismo que tiene el sistema operativo para tomar bloques de la memoria RAM y escribirlos a disco y viceversa. Con el objetivo de liberar espacio en la RAM.
+Cada proceso tiene su memoria virtual.
+Característica importante de los procesos es el aislamiento. Los procesos no tienen acceso a la memoria física.
+iOs tiene memoria virtual y no tiene swap de paginación.
+
+
+
+
+
+
+
+
+
+
+
+
+Se verá una sesión de: 
+Grand Central Dispatch(concurrencia y paralelismo. Este corre a nivel del sistema operativo y la interfaz es en C), NSOperation. Para Web Services se verá URLSession, este opera dentro de los dos anteriores.
+Seguridad y Criptografía.
+
+AppDelegate lo va a preguntar.
+
+
+————————————————————————————————————
+
+REPASO 3:
+Tipos genéricos y opacos
+
+NSRUNLOOP o MAINLOOP: Ciclo que mantiene viva a la aplicación
+	- Revisa si hay eventos (touch).
+	- Rutea
+	- Utiliza el target action. El Target  (el VC) y el action es el nombre del metodo que quiero que se ejecute que está dentro del VC.
+	- Se repintan las vistas.
+	- Autorelease pool: Le da release a todos los eventos 
+	- Se repite el ciclo.
+
+Data: el programa
+Stack: flujo del programa (tiene un limite fijo)
+Heap: se guarda todo lo dinámico
+
+Swift UI las vistas son estructuras, las estructuras se pasan por valor y las vistas se van a guardar en el stock. Lo cual será más rápido que accederlas en el HEAP.
+
+Emulador: Representa la arquitectura donde el programa fue compilado. Da un ambiente de ejecución idéntico al dispositivo real.
+
+ISA: API, conjunto de instrucciones que tiene el procesador. Cada procesador tiene su propio ISA.
+
+En Swift todas las variables por default son “no opcionales” a menos que se le ponga un signo de interrogación. En este momento se declara una variable opcional (como en java). **Evitar esto en lo posible y también evitar forzar el unwrapped.
+
+———————————Jonathan Blow - Preventing the Collapse of Civilization 
+Concepto de atomos epoca de Aristoteles.
+
+TIPS PARA DEBUGEAR
+No usar “log”.
+Entrada - salida es: disco, red.
+
+
+
+git push -u origin Noemi-cameraAccess
+
+
+————————————————————————————————————
+
+APP FINAL
+Nombre: Free Time App
+Nombre del responsable del proyecto: Rodrigo Vivas Maldonado
+Correo Electrónico: rodrigo.vivas.25@hotmail.com
+Objetivo: Que el usuario invierta sus horas libres en eventos educativos dentro de las instalaciones de la UNAM, Ciudad Universitaria.
+Describa brevemente a que tipo de usuarios va dirigido el proyecto: Estudiantes, académicos y personas externas que se encuentren dentro de las instalaciones académicas de Ciudad Universitaria.
+En caso de ser equipo, indique los nombres de los integrantes al igual que sus correos electrónicos: Noemí Rodríguez Sandoval - sanroddd@gmail.com
+Indique la dirección del repositorio de github donde el proyecto es alojado (documentación y código): 
+
+————————————————————————————————————
+
+Diplomado día 32
+
+Estabilidad del ABI
+Libro para aprender objective-C -> Openstep
+Inside the machine — John Strokes (Arquitectura de computadoras)
+
+Framework y biblioteca son diferentes. La palabra clave es “control”. ¿Control de qué? Nosotros tenemos el control cuando mandamos a llamar a una función, por ejemplo para que se haga un zip (esto en las bibliotecas )
+En el caso del framework no tenemos ningún control, le cedemos el control de la ejecución del programa. Nosotros no lo mandamos a llamar y realiza algunas funciones sin que nosotros lo indiquemos explícitamente.
+Si decimos que usaremos el framework de cocoa touch va a pasar el ciclo de los eventos nos guste o no. 
+
+
+Programación concurrente en OS X y iOS
+
+	⁃	Definiciones
+	⁃	Problemática
+	⁃	Necesidades
+	⁃	Modelos (formas para resolver la problemática y necesidad)
+	⁃	Tecnologías (ya en la práctica)
+
+
+	⁃	Thread: Ruta de ejecución independiente. OS X y iOS utilizan POSIX threads.
+Puedo tener diferentes rutas de en donde estoy ejecutando mi programa. 
+POSIX nace como un intento de unificar el API del sistema operativo, en Windows existe un API llamado Win32, es el conjunto de llamadas a sistemas (el API del sistema operativo). POSIX nos dice que las funciones de sistemas unix deberían de ser parecidas.
+Investigar: ¿Linux es POSIX?
+
+	⁃	Proceso: Programa en ejecución, puede incluir múltiples threads. Existe el main Thread, siempre debe haber al menso un hilo, que es ese
+	⁃	Tarea: Se refiere al concepto abstracto de una actividad que necesita ser ejecutada.
+	⁃	Paralelismo: Ejecución de una tarea al mismo tiempo (HW). Ejecución de tareas al mismo tiempo. (HW -> Hardware es lo que requiere). Si no tengo hardware no puedo tener paralelismo.
+	⁃	Concurrencia: Múltiples flujos de control que pueden o no ejecutarse paralelamente. Es la capacidad que tiene una tarea (o más tareas) de poderse ejecutar de manera independiente de otra tarea. Si sacaremos las sillas del salón, cada uno lo puede hacer y no dependemos de otro; en ese escenario podemos decir que son tareas concurrentes. Otro escenario: si queremos sacar las mesas (donde hay dos personas sentadas) no es algo concurrente, porque dependemos de alguien más; el problema ahí es que están compartiendo algo. Por definición los procesos son concurrentes.
+Puedo tener concurrencia sin tener paralelismo. Sin embargo no puedo tener paralelismo sin tener concurrencia, la concurrencia es un prerrequisito. Nosotros tenemos que aprender a diseñar sistemas concurrentes.
+
+Volvamos al escenario donde solo tenemos una máquina y tenemos a todos los alumnos que somos diferentes tareas. El sistema operativo es el que coordina todo el trabajo. 
+Si no hay mecanismos de sincronización puede haber muchos problemas. Si creamos más Threads, los threads comparten el heap, comparten un espacio de memoria.
+
+Los procesos están completamente aislados, cada uno no sabe qué otro proceso se está ejecutando. Esto es en iOS.
+Cuando un programa se instala, no tiene forma de acceder a ningún recurso compartido con otras aplicaciones.
+Si una aplicación nos quiere mandar a otra, no lo hace directamente, siempre debe de pasar por el sistema operativo.
+En iOS cada proceso tiene su propio filesystem, es por eso que no puede corromper a otros programas y por eso no existen virus dentro del SO.
+
+
+
+
+Problemática
+El iconito de cargando en MacOS quiere decir que el mainloop está bloqueado, está trabado. Incluso la ruedita que sale en el iPhone significa que se bloqueó el mainloop.
+
+Deathlock - Imaginemos que tenemos la situación en donde hay un plumón y una libreta que necesitan dos hilos. Un hilo tiene la libreta y otro tiene el plumón. Si ambos hilos están esperando a que el otro hilo suelte su objeto, es a lo que se le conoce como abrazo de la muerte, porque nunca lo soltarán por esa condición.
+Si construimos nuestros programas de manera secuencia, siempre vamos a tener un core hasta el tope, es decir, usándolo completamente, por eso tenemos que diseñar sistemas concurrentes para que se puedan aprovechar los recursos.
+
+Necesidades
+	⁃	Diseño Simple
+	⁃	Expresividad
+	⁃	Eficiencia de Ejecución
+	⁃	Facilidad para Depuración
+	⁃	Escalabilidad y Balanceo de Cargas.
+	⁃	Diversidad de HW
+	⁃	Uso de Multiples Cores
+	⁃	¡Predictibilidad! 
+
+Desafío
+
+Tenemos un programa que puede ser dividido en 8 tareas separadas. Tenemos una máquina con 8 cores. El programa crea 4 threads. ¿Son pocos o muchos?
+La respuesta no es ni pocos ni muchos. Depende del estado actual del sistema. No es lo mismo usar la máquina en la tarde o a las 2 de la mañana.
+El único que administra todo lo de los procesos, es el sistema operativo
+
+Modelos:
+
+Grand Central Dispatch es la tecnología que Apple ha implementado desde hace varios años. 
+Características:
+	⁃	Uso de Bloques y Dispatch Queues (utiliza lo que se conoce como bloque y colas).      En GCD nosotros no vamos a crear Threads. Ya sabemos que no podemos saber cuántos Threads debemos crear, por el mismo tema del estado del sistema; así que no los creemos nosotros. Así que lo que vamos a usar en lugar de Threads, será el concepto de Colas, donde la tarea yo la voy a poder meter como un bloque (un closure) y voy a poder meterla dentro del Queue, así si yo tengo 20 tareas, yo las voy a meter en un queue y el queue mágicamente se encarga de que se ejecuten de manera óptima.
+	⁃	Servicio del sistema Operativo (libSystem)      ¿Dónde está implementado GCD? Es un servicio implementado a nivel del sistema operativo (No es de swift, ni de obj-C), es parte del SO. Esto es porque el SO es el único que sabe la carga del sistema. El API oficial es en C. Directamente en C podemos escribir código para GCD.
+	⁃	Fácil de usar.        GCD va a estar creando los threads de manera dinámica. El sistema operativo va a saber cuántos utilizar dependiendo del estado del sistema, en un momento puede crear 8 y después lo baja a 4. Él los crea y los destruye. Sólo le tenemos que indicar cuales son las tareas concurrentes y él lo administra. En Obj-C existe NSOperation
+	⁃	La concurrencia es a nivel de tareas.   Nosotros solamente tenemos que preocuparnos por separar las tareas. Debemos identificar qué tareas podemos ejecutar de manera concurrente. Las tareas que generalmente tengan como función tener entrada y salida, puede ser de manera concurrente y así se evita el bloquear el thread principal.
+	⁃	Provee un ciclo de manejo de eventos con callbacks.
+	⁃	Disminución de cambio de contextos.
+	⁃	Análisis de uso en tiempo de ejecución.
+
+MainQueue tiene al mainThread
+
+Grand Central Dispatch - Es una biblioteca también llamadas libdispatch
+	⁃	Aka libdispatch
+	⁃	Mac OS X 10.6 (released June 2009)
+	⁃	iOS 4.0 (a partir de)
+	⁃	FreeBSD 8.1 (a partir de)
+
+http://www.opensource.apple.com/source/libdispatch/ 
+
+¿Cuánto ocupa de espacio un Thread?
+Un thread generalmente ocupa 512k, solamente el thread. ¿Cuánto ocupa el Queue del GCD? 256 bytes
+
+GCD
+	⁃	512k thread vs 256 bytes
+	⁃	Normal queues (multiple threads)
+	⁃	Dispatch es FIFO
+	⁃	Serial Queues (un sólo thread)
+	⁃	Dispatch & terminación es FIFO
+	⁃	Encadenamiento o agrupamiento de Queues
+	⁃	Suspender, Reanudar o Cancelar Queues
+
+
+Queues que ya vienen predefinidas dentro de Grand central dispatch
+	⁃	dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0)
+	⁃	Main queue
+	⁃	Brackground queue (concurrent)
+
+Blocks
+	⁃	Closures
+	⁃	Funciones anónimas 
+
+NSOperation (U Operation en Swift) puedo crear queues, tengo tareas, es idéntico, pero NSOperation me permite tener aún más control en las tareas. El GCD me permite suspender, reactivar o cancelar un Queue, NSOperation me permite suspender, reactivar o cancelar TAREAS, es a nivel de tarea. Operation nos da una API de más alto nivel.
+
+
+Resumen
+	⁃	Siempre utilizar la tecnología con mayor nivel de abstracción disponible
+	⁃	NSOperation
+	⁃	GCD
+	⁃	OpenMP
+	⁃	Threads (En caso de que las tres anteriores no nos sirvan)
+	⁃	Evitar el uso directo de Threads
+
+
+————————————————————————————————————
+
+CLASE UX
+¿Qué es UX?
+Todo aquello que un usuario experimenta al momento de usar el producto (emociones)
+Nuestro enfoque para hacer una aplicación
+¿Cuál es la tarea que el usuario va a realizar? ¿Cuáles son los pasos que debería seguir el usuario para completar la tarea?
+
+Personalización: “Recomendaciones con base a los gustos del usuario”.
+Customización: El contenido se va a ir adaptando a las búsquedas. Cómo se analizan los datos.
+
+Diseñado centrado en el usuario.
+¿Quién es el usuario final de mi aplicación?
+¿Para quién estamos creando esta aplicación?
+Diseñar aplicaciones para un tipo específico de usuario o personas y casos de uso.
+Cómo crear una lista de features que cubran las necesidades	de mis usuarios y los casos de uso que identifiqué previamente.
+
+Caso de uso - ¿Cómo una persona utiliza nuestro producto para cumplir con una tarea?
+-Es importante siempre considerar la persona y sus casos de uso.
+-Priorizar lista de featues.
+
+Design Thinking
+Empathize
+Define
+Ideate
+Prototype
+Test
+Ideate again (loop)
+
+
+CLASE 
+
+Estado en el que se encuentra la aplicación - Application Delegate
+THE STRUCTURE OF AN APP
+-UIApplication
+-App Delegate
+-Model
+-View Controllers
+-UIWindow
+-View and UIObjects
+ 
+
+misael@bunsan.io
+
+————————————————————————————————————
+
+REPASO 2:
+
+¿Qué es simulador y un emulador?
+Simulador:  El ejecutable no es el mismo. La ventaja es que este es más rápido.
+Emulador: El ejecutable es para ARM para RISC con el set de instrucciones del dispositivo. Lo que permite es que pueda tener un ejecutable de otra arquitectura y que corra en el dispositivo que no es la misma. Su ventaja es que garantiza que es como si estuviera corriendo en el teléfono.
+
+Conjunto de instrucciones de un procesador
+CISC: Complex instruction set computer
+RISC: Reduce instruction set computer
+ACORN: arquitecturas basadas en swift.
+
+En iOs tenemos simulador.
+Cocoa y cocoa touch no tienen mother view controller. 
+
+	◦	XCODE
+Cmd + option + 0 = panel derecha desaparece
+Cmd + 0 = panel izquierda desaparece. 
+
+TARGET DEPENDENCIAS
+Aquí primero se ejecutan “las recetas” y las salidas de esas recetas se ejecutan en el compile sources. Y también se pueden hacer referencias a otros project.
+
+COMPILE SOURCES
+Por cada archivo .m el compilador genera un archivo .o. El linker une los archivos .o. El linker toma la salida del .o y los va a mezclar para generar un solo archivo ejecutable.
+El linker va a verificar primero en los archivos .o, después en las dependencias de terceros (bibliotecas) y después en los frameworks del sistema operativo (UIKit).
+Si sale un error de “undefined failed” puede que haya fallado que falto poner una dependencia del tercero en la “receta - compile sources”.
+Si es un error de sintaxis el compilador es el que lo reporta.
+En el compile source no hay archivos .h porque no recibo este tipo de archivos, solo el pre procesador. 
+Todas las directivas que están en gatito son comandos de pre procesador.
+
+LINK BINARY WITH LIBRARIES (LINKER)
+En el Link Binary van las dependencias de terceros y las bibliotecas.
+Al final de este proceso solo sale el ejecutable.
+
+COPY BUNDLE RESOURCES
+Todos los archivos de configuración. Lo genera el package manager.
+Aquí se genera el .IPA firmado para mandarlo a la tienda.
+
+Para que un archivo lo incluya como parte de Xcode el archivo debe de estar en compile sources. No solo en el menú o la “alacena”.
+https://grox.io
+The pragmatic Programmer by David Thomas
+
+GIT
+Para subir commits
+Git status
+Git add .
+Git commit -m “Comentarios”
+Git push
+
+
+————————————————————————————————————
+
+Bugsee, breakpoints.
+
+Test breakpoint: Para debugger la prueba. Cuando una prueba falle, que pare ahí para empezar a debuguear. Para analizar porqué fallo la prueba.
+Constrains error breakpoint: Cuando hay errores con el Autolayout.
+NS Exception breakpoint: Lo origina Objetive C y sirve para generar excepciones. El programa se cierra por lo tanto en todos los proyectores dejar habilitado ese breakpoint.
+Symbolic breakpoint: Sirve para ponerlas en funciones específicas.
+Swift error breakpoint: como el NS Excpection pero en Swift. Y este es válido tenerlo siempre.
+
+Sandbox: Mecanismo de seguridad que incluye un failsystem virtual. 
+-Mitiga los virus.
+-Borra la carpeta definitiva de un sistema.
+Un directorio importante dentro del FileSystem dentro del Sandbox para nosotros es el llamado “Documents”.
+
+Paralelismo: Ejecución de una tarea al mismo tiempo
+Concurrencia: no depende una tarea de la otra dos o más tareas y pueden correr de manera simultánea.
+
+————————————————————————————————————
+
+ Entregables.
+-Código fuente. (Ponerele el tipo de licenciamiento, ponerle  nombres de los participantes en cada uno de los archivos, repo en GitHub).
+-Documentación básica del proyecto (pdf) (Resaltar la parte técnica de cómo desarrollamos el proyecto). (También indicar el objetivo).
+-Presentación del proyecto (PDF) (Documento de venta). (A quién va dirigido, funcionalidades). (También indicar el objetivo).
+-5 capturas de imagen de la app.
+-1 video de uso menor a 1 minuto.
+-Captura de imagen del icono de la app.
+
+
+
+-Enviar a correo de germans@unam.mx (Repositorio de GitHub, repositorio de documentación, nombre de los integrantes).
+-El proyecto se entrega a más tardar el 11 de Agosto. Óptimo el Lunes 5.
+
+
+
+————————————————————————————————————
+
+NORBERTO.
+Criptografía.
+
+Problemas:
+Tratar de implementar nuestro algoritmo.
+Usar mal una biblioteca.
+
+***Creating “Secure” Apps***
+¿Qué es seguridad? 
+No solo es un tema de confidencialidad, también se ve la integridad de la información (información correcta sin alteraciones por otros) y disponibilidad de un sistema.
+
+¿Cuáles son los mecanismos de control que hay que tener presentes para asegurar un sistema?
+-Autenticación(Authentication): Proceso de autenticar sí la persona dice ser quien ser. Validar la identidad. Con base a eso se puede…
+-Autorizar(Authorization): Decidir si se tiene permiso a la información.
+-Identificar(Identification): ¿Qué se a utilizar para identificar a alguien? Algo que la persona sepa, tenga o sea. 
+-Accountability: Llevar un registro de quién hizo qué. Tipo de bitácora.
+
+Cosas importantes para diseñar nuestro sistema:
+Least Privilege: Estrategias
+Defense in Depth
+Compartmentalization: Cómo se puede contener algo si falla.
+
+Básicos:
+Steganography.
+Criptology:
+Cryptography: Rama enfocada en el diseño y la implementación de algoritmos para poder resguardar la información o tener cierta seguridad
+Cryptanalisis: El criptoanálisis se dedica a cómo romper la criptografía.
+Encrytion.
+Code & Cipher: Para la información que se quiera ocultar.
+Code: Lo maneja a nivel de palabras.
+Cipher: La transformación se hace a nivel de caracter.
+
+Pseudo Random Numbers: Cimientos de todo lo que tiene que ver con criptograma. Si no tenemos bueno algoritmos para generar numero aleatorios se está perdido. Se les dice pseudo aleatorios porque cualquier numero que elija la computadora no es del todo aleatorio. La computadora elige un número que sea repetitivo.
+
+Para hablar de cifrado, nuestra función debe de tener inversa.
+
+Digests (SHA-3): Funciones de digestión o HASHES. Los HASHES son funciones que no tienen inversa. Todas las funciones de digestión, una de sus grandes características	es que no tienen inversa, por lo tanto, no son algoritmos de cifrado. 
+Propiedades importantes:
+Estas funciones van a tomar los datos y van a generar la salida. Tomando la salida, no van a poder saber cuál fue su entrada.
+Si se mete la misma entrada se va a tener la misma salida, siempre.
+Si a la entrada se le mueve un bit y se pasa por la función, la salida será completamente diferente.
+El tamaño de la salida siempre es el mismo. 
+Por esta última propiedad se dice que las funciones de HASH tienen colisiones.
+
+Hay dos grandes formas de poder cifrar la información: cifrado simétrico y asimétrico.
+Simétrico: Para cifrar y para descifrar necesitamos la misma llave.
+Asimétrico: Se cifra la información con una llave y se descifra con otra. Se utilizan dos llaves.
+
+Symetric Keys (AES) : Estándar internacional de cifrado avanzado. El algoritmo que se utiliza se llama Randall. Este es fácil de implementar en Hardware.
+Los algoritmos simétricos son extremadamente rápidos y por lo tanto son eficientes.
+El problema de los algoritmos simétricos es cómo obtener la misma llave para poder cifrar y descifrar. Este problema se soluciona con el surgimiento del concepto:
+
+Asymetric Keys (RSA) : 
+Si se cifra con una llave pública solo se puede descifrar con una llave privada y viceversa.
+Esas llaves se generan con la utilización de números primos.
+Cifrar grandes cantidades de información con llaves asimétricas es muy tardado.
+
+Se utilizan llaves asimétricas para compartir las llaves y llaves simétricas para compartir la información.
+
+Certificates (X.509) : Son el mecanismo que se define para poder compartir las llaves publicas. Este concepto sale de no saber quién provee estas llaves publicas (tiene que ver el proceso de autenticación).
+
+Key Derivation Functions (PBKDF2) :  Estas son especialmente diseñadas para generar llaves seguras. Cuando queramos generar llaves se debe utilizar una función de aquí, es la manera correcta.
+
+CRIPTOSISTEMA: Combinación de uno o más algoritmos.
+GIT: Es un criptosistema, no necesita de un servidor central.
+
+————————————————————————————————————
+
+NORBERTO SÁBADO.
+Se usa Data Protection para información delicada ya que no toda la información se cifra.
+Las llaves no se guardan donde van los datos de informarción.
+
+Cada sandox tiene acceso a su propio espacio de Keychain.
+El Keychain dentro de la base de datos del teléfono es un “sqlite”. Este garantiza aislamiento, asegurando que ninguna aplicación se meta con otro Keychain de otra aplicación.
+
+Detalles del Keychain : Está pensado para guardar datos pequeños. (Contraseñas, login)
+
+Unicode : tabla de mapeo.
+
+
+¿Cómo generar/diseñar una firma digital?
+
+-Proporciona que el documento no fue modificado después de la firma y quien lo firmo es quien dice ser y evitar el no repudio.
+
+Nos interesa saber que el documento no es alterado.
+Se utiliza un HASH (se utiliza para saber si un documento fue modificado)
+
+————————————————————————————————————
+
+Diplomado Día 39
+
+Temas:
+Procesos
+Proceso de compilación
+Memoria virtual
+Swap
+Manejo de eventos
+Ciclo de vida de la aplicación
+Estados de la aplicación
+Target action
+Simulador y emulares
+Cada cosa de los procesos
+Concurrencia
+Conceptos de swift como opcionales
+Mainloop
+Debugging
+Algunas cosas de Objective-C
+Temas de Xcode
+Criptografía
+
+ChachaPoly es un cipher por stream (Más fácil de implementar pero es más fácil que lo puedan usar mal)
+Reindall es por bloques (Es más seguro pero más costoso en hardware)
+
+Hashes de password:
+- Pbkdf2
+- Argon2
+
+Documentos
+Cifrado simétrico 
+- HMAC 
+
+Funciones de digestión
+- SHA256
+- SHA516
+
+DataProtection
+Se tienen dos archivos, cada uno tiene su llave (file Key) y ambas llaves están cifradas (Class key) yo para poder cifrar la class key necesito: La construcción de la llave se hace mediante la clave, huella o detección de rostro (User Passcode) más aparte la llave del dispositivo (Device Key). Con eso aseguro que la llave no está almacenada toda en el dispositivo. El FileSystem Key sirve como complemento. Esto no tiene nada que ver con KeyChain
+
+El archivo o lugar físico del KeyChain, es un archivo de sqlite. Ese archivo por default está con Data Protection. Lo que guardamos en el KeyChain nosotros tendríamos que cifrarlo.
+
+La diferencia entre un HMAC y una firma digital es:
+En firma digital se usa un algoritmo de llaves asimétricas porque con ellas se garantiza que el que firma el documento fue el único que lo pudo haber hecho.
+Si usamos una llave simétrica no es una firma digital, pero el HMAC nos va a servir para verificar que los datos no fueron alterados en el camino.
+La llave simétrica se comparte entre el web service y la app móvil.
+
+
+Mandamos el documento, junto con el hash al web service
+Ambos tenemos la llave
+Del lado del web se descifra y ya sabe que yo lo mandé.
+A los datos que me mandas le paso la función de digestión y debe ser igual al hash que descifré, y si no es igual quiere decir que se modificó.
+
+
+
+Creación de servicios web con Swift con:
+- Vapor
+- Kitura (hecho por IBM)
+
+
+Llaves mediante un canal inseguro y que los datos no sean muchos.
+Para transmitir tokens o llaves
+Cifrados Asimétricos
+- RSA
+- Curvas elípticas (Mejor usar estas porque incluso están de moda). Con estas yo puedo obtener la misma seguridad de RSA pero con llaves más pequeñas. Lo cual hace que sean más eficientes.
+
+
+Algoritmos basados en curvas elípticas, es un algoritmo de llaves asimétrico (Curve25519)
