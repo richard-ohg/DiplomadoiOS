@@ -306,9 +306,17 @@ root View Controller
 		View
 
 
-- todos los eventos llegan al "UIApplication" en el método "sendEvent"
+- todos los eventos llegan al "UIApplication" en el método "sendEvent", rutea el evento (todos los que hereda de UIResponder)
+
+- con el target action se dice que accion hacer cuando llega el evento (target - VC, action - funcion)
+
+- posterior se manda a repintar los views 
+
+- autorelease pool -> libero memoria 
 
 - UIResponder -> tiene la logica para manejar eventos
+
+- funcion start() es la primer funcion que se ejecuta, tiene que ver con el runtime de C -> manda a llamar la funcion main() -> crea el runloop
 
 - biblioteca vs framework
 
@@ -327,7 +335,9 @@ libro arquitectura -> https://www.amazon.com/-/es/Len-Bass-ebook/dp/B009GMUL84/r
 		|			|		|				|			|				|			|
 	-----------------------------------------------------------------------------------------
 	|																						|
-simple																					complejo
++ simple																					+ complejo
+- flexible																					+ flexible
+
 
 - enums -> permiten restringir el tipo de dato y los valores permitidos
 
@@ -348,3 +358,12 @@ breakpoint types:
 memoria virtual -> para que un programa pueda correr necesita ejecutarse en la RAM, entonces se hace el proceso de envio del disco duro a la  RAM. 
 
 Practical Cryptography for Deelopers book - https://github.com/nakov/Practical-Cryptography-for-Developers-Book
+
+
+------------------------------- 24/01
+
+* Reference Counting (el contador lo tiene la instancia) -> cada que se crea la instancia se inicia el contador con 1, si el contador llega a 0, el objeto es liberado (destruido). Para que el contador pueda aumentar, este debe de ser un retain (strong)
+
+
+registros -> cache L3-L1 -> RAM -> Disco -> Maquina
+
