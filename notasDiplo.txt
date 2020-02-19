@@ -348,9 +348,12 @@ libro arquitectura -> https://www.amazon.com/-/es/Len-Bass-ebook/dp/B009GMUL84/r
 
 breakpoint types:
 
-- swift error breakpoint -> para cuando tenemos un error que truene la aplicación
-- exception breakpoint ->
-- symbolic breakpoint -> podemos poner un breakpoint en el nombre de una funcion sin importar que esta no sea de nosotros, se detiene cuando se manda a llamar la función y ver quien  la manda a llamar  
+- swift error breakpoint -> para cuando tenemos un error que truene la aplicación (en swift)
+- exception breakpoint -> excepciones de Objetive-C
+- symbolic breakpoint -> podemos poner un breakpoint en el nombre de una funcion sin importar que esta no sea de nosotros, se detiene cuando se manda a llamar la función y ver quien  la manda a llamar  (interceptar el llamado de una funcion)
+- constraint breakpoint -> errores en autolayout
+- test breakpoint -> retener la ejecucion de las pruebas cuando una prueba falle
+- breakpoint de posicion 
 
 
 --------------------------------
@@ -367,3 +370,43 @@ Practical Cryptography for Deelopers book - https://github.com/nakov/Practical-C
 
 registros -> cache L3-L1 -> RAM -> Disco -> Maquina
 
+
+OTP -> https://www.grc.com/ppp/design.htm
+
+- Division de un proceso: 
+data -> codigo compilado
+head -> objetos, puede crecer
+stack -> el que lleva el flujo del programa 
+
+
+emulador vs simulador -> emulador toma en cuenta el set se instrucciones del dispositivo (interpreta, traduce instrucciones de uno para poder correr), por lo tanto es mas lento y consume mas recursos, el simulador es más rápido pero solo hace pensar que se esta ejecutando en el dispostivo, aunque en realidad el ejecutable lo esta haciendo para que pueda correr en el dispositivo donde se compilo, entonces si usamos el ejecutable en el disposito real no correrá 
+
+hmac -> una llave simetrica y un hash para verificacion de mensajes
+
+condiciones de carrera -> varios hilos quieren acceder a un mismo recurso  (bloque de memoria), por lo tanto la salida dependerá de que hilo agarre primero el recurso 
+
+sandbox -> mecanismo del SO para restringir a que recursos puede acceder el programa (RAM, FileSystem, Red, a otros servicios del SO), limita las capacidades de una app dandole a creer que todo el Filesystem es de ella. 
+
+sistema de protección de ios -> por defecto cifra algunos archivos del filesystem, como por ejemplo el keychain (se puede modificar que archivos se deben cifrar), entonces cuando se bloque el telefono cifra esos archivos y cuando se desbloque se descifran, solo si tiene pin o biometrico. 
+
+
+--------------------------------------------------
+protocolos -> similar a un contrato que especifican que es lo que hace y que devuelve, pero no dice como. Su objetivo es para que quien quiera la funcionalidad, no dependa de una implementacion 
+clases/estructuras -> implementan el protocolo y ellos son los que dicen como se hace 
+
+- regla importante para evitar ciclos de retencion -> padres deben tener referencias strong  a los hijos, pero los hijos siempre deben tener referencia weak hacia los padres 
+
+* SwiftUI
+- View es un protocolo
+- some View ->  some es un wrapper. El protocolo view tiene tipos asociados, por lo tanto es un protocolo generico, entonces indicamos que será de tipo vista pero puede comportarse como cualquier otro
+
+* Libros
+
+- the pragmatic programmer - David Thomas, Andrew
+- programming perls -> John Bentley
+- code complete 2 -> microsoft Steve McConnell
+- software estimation -> Steve McConnell - https://www.amazon.com/Software-Estimation-Demystifying-Developer-Practices/dp/0735605351
+- Rapid Development -> Steve McConnell
+- the art UNIX programmin -> Eric S. Raymond
+- smallTalk -> http://stephane.ducasse.free.fr/FreeBooks/BestSmalltalkPractices/Draft-Smalltalk%20Best%20Practice%20Patterns%20Kent%20Beck.pdf
+- Xcode Treasures -> https://pragprog.com/book/caxcode/xcode-treasures
