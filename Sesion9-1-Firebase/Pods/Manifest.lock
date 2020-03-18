@@ -195,7 +195,7 @@ DEPENDENCIES:
   - FirebaseUI
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - BoringSSL-GRPC
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -255,6 +255,6 @@ SPEC CHECKSUMS:
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
 
-PODFILE CHECKSUM: c897e7611358aea535f978b8d9ea2e457405cefa
+PODFILE CHECKSUM: b84166b4586d65fca192f6f9c7e1da1073df2afc
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
